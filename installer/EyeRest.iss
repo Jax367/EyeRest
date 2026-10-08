@@ -38,6 +38,7 @@ Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{
 Source: "{#BuildDirectory}\EyeRest.exe"; DestDir: "{app}"; Flags: ignoreversion
 Source: "{#BuildDirectory}\EyeRest.exe.config"; DestDir: "{app}"; Flags: ignoreversion
 Source: "{#BuildDirectory}\README.md"; DestDir: "{app}"; Flags: ignoreversion
+Source: "{#BuildDirectory}\README.en.md"; DestDir: "{app}"; Flags: ignoreversion
 
 [Icons]
 Name: "{group}\目间 EyeRest"; Filename: "{app}\EyeRest.exe"

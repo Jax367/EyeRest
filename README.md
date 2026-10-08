@@ -1,5 +1,7 @@
 # 目间 EyeRest
 
+[简体中文](README.md) | [English](README.en.md)
+
 一个轻量的 Windows 桌面休息提醒程序。使用 C#、原生 WinForms 和系统 .NET Framework 4.8，无第三方依赖，无网络请求。
 
 当前版本：**v1.5.0**。作者：**Lar**（turelar367@gmail.com）。
