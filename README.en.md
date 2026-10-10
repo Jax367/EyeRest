@@ -1,12 +1,59 @@
+<div align="center">
+
+![EyeRest · A little pause, a softer day](https://raw.githubusercontent.com/Jax367/EyeRest/main/docs/images/banner.svg)
+
 # 目间 EyeRest
 
-[简体中文](README.md) | [English](README.en.md)
+**A little pause, a softer day.**
 
-A lightweight Windows desktop break reminder built with C#, native WinForms, and .NET Framework 4.8. It has no third-party runtime dependencies and makes no network requests.
+A lightweight Windows break reminder · Four themes · Custom quotes · Local settings
 
-Current version: **v1.5.0**. Author: **Lar** (turelar367@gmail.com).
+[![Release](https://img.shields.io/github/v/release/Jax367/EyeRest?style=flat-square&color=687d42)](https://github.com/Jax367/EyeRest/releases/latest)
+[![Downloads](https://img.shields.io/github/downloads/Jax367/EyeRest/total?style=flat-square&color=28765b)](https://github.com/Jax367/EyeRest/releases)
+[![Windows](https://img.shields.io/badge/Windows-10%20%2F%2011-486b82?style=flat-square)](https://github.com/Jax367/EyeRest/releases/latest)
+[![C Sharp](https://img.shields.io/badge/C%23-.NET%20Framework%204.8-77608c?style=flat-square)](#technology-stack)
+[![Stars](https://img.shields.io/github/stars/Jax367/EyeRest?style=flat-square&color=ba9550)](https://github.com/Jax367/EyeRest/stargazers)
+
+[简体中文](README.md) · **English** · [日本語](README.ja.md)
+
+[Download](https://github.com/Jax367/EyeRest/releases/latest) · [Screenshots](#screenshots) · [Technology stack](#technology-stack) · [Report an issue](https://github.com/Jax367/EyeRest/issues)
+
+</div>
+
+---
+
+## Meet EyeRest
+
+| ⏱️ Your own rhythm | 🎨 Your own look | 🌿 A quiet companion |
+| :--- | :--- | :--- |
+| A default 20-minute interval and 20-second break; pause, resume, or snooze | Four themes, character portraits, custom fonts/colors, and 70%–150% window scaling | System tray, single instance, optional startup, and no administrator privileges |
+| Play your custom quotes sequentially or randomly | An unofficial Floor of Art · Netzach fan theme | Local settings and no application network requests |
+
+Current version: **v1.5.0** · Author: **Lar** (turelar367@gmail.com). Documentation is available in Chinese, English, and Japanese.
 
 The application's interface is currently in Chinese. This guide includes Chinese labels for the main controls to help you find them.
+
+## Screenshots
+
+| Pine Forest · Settings | Pine Forest · Reminder |
+| :---: | :---: |
+| ![Pine Forest settings](https://raw.githubusercontent.com/Jax367/EyeRest/main/docs/images/settings-0.png) | ![Pine Forest reminder](https://raw.githubusercontent.com/Jax367/EyeRest/main/docs/images/reminder-0.png) |
+| **Floor of Art · Settings** | **Floor of Art · Netzach reminder** |
+| ![Floor of Art settings](https://raw.githubusercontent.com/Jax367/EyeRest/main/docs/images/settings-3.png) | ![Netzach reminder](https://raw.githubusercontent.com/Jax367/EyeRest/main/docs/images/reminder-3.png) |
+
+## Technology stack
+
+| Technology | Role in EyeRest |
+| :--- | :--- |
+| **C# / .NET Framework 4.8** | Application logic and runtime; built with the system C# compiler |
+| **WinForms** | Settings, reminders, tray menus, and event scheduling |
+| **System.Drawing / GDI+** | Themes, title bars, icons, artwork, and proportional rendering |
+| **JSON / DataContractJsonSerializer** | Local configuration, atomic saves, and backup recovery |
+| **Stopwatch / WinForms Timer** | Monotonic timing, pause/resume, and break countdowns |
+| **Mutex / EventWaitHandle** | Single-instance protection and activation of an existing window |
+| **PowerShell / Inno Setup** | Self-tests, portable ZIPs, per-user installers, and SHA-256 checksums |
+
+The application has no third-party runtime dependencies. Running it does not require Python, Node.js, or the .NET SDK.
 
 ## Download and installation
 
@@ -137,3 +184,17 @@ The `artifacts` folder contains settings and reminder previews for all four them
 - `src/SelfTests.cs`: self-tests and interface rendering.
 
 EyeRest uses a WinForms timer that ticks once per second and a monotonic clock, with no busy loop. While a break reminder is open, its countdown updates every 250 milliseconds. Actual memory usage includes the CLR, fonts, and window resources; executable size is not a measure of runtime memory usage.
+
+---
+
+<div align="center">
+
+### 🌱 People stopping by for a little rest
+
+![EyeRest page view counter](https://count.kjchmc.cn/get/@Jax367-EyeRest?theme=asoul)
+
+<sub>Powered by <a href="https://github.com/journey-ad/Moe-Counter">Moe Counter</a> · <a href="https://count.kjchmc.cn/?lang=en">Counter service</a> · Counts image loads, not unique visitors.</sub>
+
+**Made by Lar · Take a break, then keep going.**
+
+</div>

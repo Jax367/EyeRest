@@ -10,11 +10,12 @@ if ($LASTEXITCODE -ne 0) { throw 'Compilation failed.' }
 Copy-Item -LiteralPath (Join-Path $PSScriptRoot 'EyeRest.exe.config') -Destination $output
 Copy-Item -LiteralPath (Join-Path $PSScriptRoot 'README.md') -Destination $output
 Copy-Item -LiteralPath (Join-Path $PSScriptRoot 'README.en.md') -Destination $output
+Copy-Item -LiteralPath (Join-Path $PSScriptRoot 'README.ja.md') -Destination $output
 if ($Test) {
     $report = Join-Path $output 'test-results.txt'
     $process = Start-Process -FilePath "$output\EyeRest.exe" -ArgumentList '--self-test', "`"$report`"" -Wait -PassThru -WindowStyle Hidden
     if (Test-Path -LiteralPath $report) { Get-Content -LiteralPath $report -Encoding UTF8 }
     if ($process.ExitCode -ne 0) { throw 'Tests failed.' }
 }
-Compress-Archive -LiteralPath "$output\EyeRest.exe", "$output\EyeRest.exe.config", "$output\README.md", "$output\README.en.md" -DestinationPath "$output\EyeRest-portable.zip" -Force
+Compress-Archive -LiteralPath "$output\EyeRest.exe", "$output\EyeRest.exe.config", "$output\README.md", "$output\README.en.md", "$output\README.ja.md" -DestinationPath "$output\EyeRest-portable.zip" -Force
 Write-Output "Built: $output\EyeRest.exe"

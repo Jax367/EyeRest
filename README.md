@@ -1,10 +1,57 @@
+<div align="center">
+
+![EyeRest · 给忙碌留一点空隙](https://raw.githubusercontent.com/Jax367/EyeRest/main/docs/images/banner.svg)
+
 # 目间 EyeRest
 
-[简体中文](README.md) | [English](README.en.md)
+**给忙碌留一点空隙，让休息有一点温度。**
 
-一个轻量的 Windows 桌面休息提醒程序。使用 C#、原生 WinForms 和系统 .NET Framework 4.8，无第三方依赖，无网络请求。
+轻量 Windows 休息提醒 · 四套主题 · 自定义语录 · 本地运行
 
-当前版本：**v1.5.0**。作者：**Lar**（turelar367@gmail.com）。
+[![Release](https://img.shields.io/github/v/release/Jax367/EyeRest?style=flat-square&color=687d42)](https://github.com/Jax367/EyeRest/releases/latest)
+[![Downloads](https://img.shields.io/github/downloads/Jax367/EyeRest/total?style=flat-square&color=28765b)](https://github.com/Jax367/EyeRest/releases)
+[![Windows](https://img.shields.io/badge/Windows-10%20%2F%2011-486b82?style=flat-square)](https://github.com/Jax367/EyeRest/releases/latest)
+[![C Sharp](https://img.shields.io/badge/C%23-.NET%20Framework%204.8-77608c?style=flat-square)](#技术栈)
+[![Stars](https://img.shields.io/github/stars/Jax367/EyeRest?style=flat-square&color=ba9550)](https://github.com/Jax367/EyeRest/stargazers)
+
+**简体中文** · [English](README.en.md) · [日本語](README.ja.md)
+
+[下载最新版](https://github.com/Jax367/EyeRest/releases/latest) · [界面预览](#界面预览) · [技术栈](#技术栈) · [反馈问题](https://github.com/Jax367/EyeRest/issues)
+
+</div>
+
+---
+
+## 为什么选择目间
+
+| ⏱️ 按自己的节奏 | 🎨 让提醒更合心意 | 🌿 安静地陪伴 |
+| :--- | :--- | :--- |
+| 默认 20 分钟 / 20 秒；支持暂停、继续和稍后提醒 | 四套主题、人物形象、字体配色与 70%–150% 窗口缩放 | 托盘运行、单实例、可选开机自启，无需管理员权限 |
+| 自定义语录按顺序或随机播放 | 艺术层 · Netzach 非官方同人主题 | 设置保存在本机，应用无网络请求 |
+
+当前版本：**v1.5.0** · 作者：**Lar**（turelar367@gmail.com）。文档提供中文、英文和日文；应用界面目前为中文。
+
+## 界面预览
+
+| 松林 · 设置 | 松林 · 休息提醒 |
+| :---: | :---: |
+| ![松林设置界面](https://raw.githubusercontent.com/Jax367/EyeRest/main/docs/images/settings-0.png) | ![松林休息提醒](https://raw.githubusercontent.com/Jax367/EyeRest/main/docs/images/reminder-0.png) |
+| **艺术层 · 设置** | **艺术层 · Netzach 提醒** |
+| ![艺术层设置界面](https://raw.githubusercontent.com/Jax367/EyeRest/main/docs/images/settings-3.png) | ![Netzach 休息提醒](https://raw.githubusercontent.com/Jax367/EyeRest/main/docs/images/reminder-3.png) |
+
+## 技术栈
+
+| 技术 | 在项目中的用途 |
+| :--- | :--- |
+| **C# / .NET Framework 4.8** | 应用逻辑与运行时；使用系统自带 C# 编译器构建 |
+| **WinForms** | 设置窗口、休息弹窗、托盘菜单与事件调度 |
+| **System.Drawing / GDI+** | 主题、标题栏、图标、人物插画与等比例绘制 |
+| **JSON / DataContractJsonSerializer** | 本机配置持久化、原子保存与备份恢复 |
+| **Stopwatch / WinForms Timer** | 单调时钟计时、暂停恢复与提醒倒计时 |
+| **Mutex / EventWaitHandle** | 单实例防护与已有窗口激活 |
+| **PowerShell / Inno Setup** | 自检、便携 ZIP、当前用户安装包和 SHA-256 校验文件 |
+
+应用无第三方运行时依赖，运行时无需 Python、Node.js 或 .NET SDK。
 
 ## 下载与安装
 
@@ -135,3 +182,17 @@ Start-Process .\build\EyeRest.exe -ArgumentList '--render-preview', "$PWD\artifa
 - `src/SelfTests.cs`：自检和界面渲染。
 
 后台使用每秒一次的 WinForms 定时器和单调时钟，不进行忙循环。休息弹窗存在期间每 250 毫秒更新倒计时。实际内存占用包含系统 CLR、字体和窗口资源，不能用 EXE 大小代替内存占用。
+
+---
+
+<div align="center">
+
+### 🌱 来这里歇一会儿的人
+
+![EyeRest 页面浏览计数](https://count.kjchmc.cn/get/@Jax367-EyeRest?theme=asoul)
+
+<sub>Powered by <a href="https://github.com/journey-ad/Moe-Counter">Moe Counter</a> · <a href="https://count.kjchmc.cn/">计数服务</a> · 统计图片加载次数，非独立访客人数。</sub>
+
+**Made by Lar · Take a break, then keep going.**
+
+</div>

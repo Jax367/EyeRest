@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="360" viewBox="0 0 1280 360" role="img" aria-labelledby="title desc">
+  <title id="title">EyeRest — A little pause, a softer day</title>
+  <desc id="desc">An olive-green banner with an eye symbol and the default twenty-minute reminder and twenty-second break.</desc>
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#121e1a"/><stop offset="1" stop-color="#2e3b25"/></linearGradient>
+    <radialGradient id="glow"><stop stop-color="#b9cf78" stop-opacity=".14"/><stop offset="1" stop-color="#b9cf78" stop-opacity="0"/></radialGradient>
+    <linearGradient id="line"><stop stop-color="#91b49a"/><stop offset="1" stop-color="#d8e598"/></linearGradient>
+  </defs>
+  <rect width="1280" height="360" rx="28" fill="url(#bg)"/>
+  <circle cx="1010" cy="180" r="300" fill="url(#glow)"/>
+  <g stroke="#d1dea5" stroke-opacity=".08" fill="none">
+    <circle cx="1010" cy="180" r="120"/><circle cx="1010" cy="180" r="169"/><circle cx="1010" cy="180" r="218"/>
+    <path d="M730 0v360M810 0v360M1210 0v360M0 310h1280"/>
+  </g>
+  <rect x="58" y="49" width="180" height="30" rx="15" fill="#d3e395" fill-opacity=".1" stroke="#d3e395" stroke-opacity=".25"/>
+  <circle cx="77" cy="64" r="4" fill="#d3e395"/>
+  <text x="92" y="69" font-family="Segoe UI,Arial,sans-serif" font-size="12" letter-spacing="2" fill="#d3e395">YOUR DAILY PAUSE</text>
+  <text x="56" y="161" font-family="Segoe UI,Arial,sans-serif" font-size="76" font-weight="700" letter-spacing="-3" fill="#f0f3e7">EyeRest<tspan fill="#c5d888">.</tspan></text>
+  <text x="60" y="205" font-family="Segoe UI,Arial,sans-serif" font-size="25" fill="#bdcbbd">A little pause, a softer day.</text>
+  <g font-family="Segoe UI,Arial,sans-serif" font-size="12" letter-spacing="2" fill="#9cae9e">
+    <text x="60" y="273">WINDOWS DESKTOP</text><text x="268" y="273">LOCAL SETTINGS</text><text x="465" y="273">ANIME THEMES</text>
+  </g>
+  <g transform="translate(1010 155)" stroke="url(#line)" stroke-width="5" fill="none" stroke-linecap="round">
+    <path d="M-100 0Q0-94 100 0Q0 94-100 0Z"/><circle r="30"/><circle r="7" fill="#d5e391" stroke="none"/>
+    <path d="M-57 61l-8 15M0 75v17M57 61l8 15" stroke-width="3"/>
+  </g>
+  <g font-family="Segoe UI,Arial,sans-serif" text-anchor="middle">
+    <text x="958" y="277" font-size="25" font-weight="600" fill="#e3eccb">20 <tspan font-size="12" fill="#aabb9a">MIN</tspan></text>
+    <text x="1077" y="277" font-size="25" font-weight="600" fill="#e3eccb">20 <tspan font-size="12" fill="#aabb9a">SEC</tspan></text>
+    <text x="1010" y="303" font-size="10" letter-spacing="2" fill="#aabb9a">DEFAULT REMINDER / BREAK</text>
+  </g>
+  <g fill="#d5e391"><circle cx="885" cy="63" r="3" opacity=".6"/><circle cx="1165" cy="113" r="2" opacity=".8"/><circle cx="1140" cy="251" r="3" opacity=".4"/></g>
+</svg>
